@@ -1,0 +1,30 @@
+---
+output:
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: svm-r-markdown-templates/svm-latex-ms.tex
+title: "Whitepaper: software development best practices for the clinical laboratory"
+author:
+- name: Noah G. Hoffman
+  affiliation: University of Washington, Department of Laboratory Medicine
+abstract: "The abstract goes here..."
+keywords: "clinical laboratory informatics, software development, best practices"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+# spacing: double
+bibliography: master.bib
+biblio-style: apsr
+---
+
+# Introduction
+
+Nice paper by [@butte-2009]
+
+# Objectives
+
+# References

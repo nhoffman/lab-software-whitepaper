@@ -1,0 +1,3 @@
+[submodule "svm-r-markdown-templates"]
+	path = svm-r-markdown-templates
+	url = https://github.com/svmiller/svm-r-markdown-templates.git
