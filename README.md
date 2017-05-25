@@ -31,6 +31,8 @@ appealing:
 - Can compile to various media types.
 - Serves as a demonstration of collaboration using open source tools!
 
+If you are proposing significant changes, it's probably best to create a feature branch (and perhaps open a pull request), and then merge with ``--squash``.
+
 ## Dependencies
 
 PDF output requires LaTeX.
