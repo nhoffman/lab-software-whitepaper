@@ -10,7 +10,6 @@ title: "Whitepaper: software development best practices for the clinical laborat
 author:
 - name: Noah G. Hoffman
   affiliation: University of Washington, Department of Laboratory Medicine
-abstract: "The abstract goes here..."
 keywords: "clinical laboratory informatics, software development, best practices"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
@@ -21,10 +20,40 @@ bibliography: master.bib
 biblio-style: apsr
 ---
 
+# Abstract
+
 # Introduction
 
-Nice paper by [@butte-2009]
+Example of a citation [@butte-2009]
 
 # Objectives
+
+# Topics
+
+## Software development lifecycle
+
+### Version control
+
+### Code review
+
+### Semantic versioning
+
+### Validation
+
+### Release cycle
+
+Mention continuous integration
+
+## Testing
+
+### Unit testing
+
+### Functional testing
+
+### Regression testing
+
+## Choosing languages and technology
+
+## Hiring a team
 
 # References
