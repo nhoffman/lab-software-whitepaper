@@ -5,7 +5,7 @@ output:
     keep_tex: true
     fig_caption: true
     latex_engine: pdflatex
-    template: svm-r-markdown-templates/svm-latex-ms.tex
+    template: ./svm-r-markdown-templates/svm-latex-ms.tex
 title: "Whitepaper: software development best practices for the clinical laboratory"
 author:
 - name: Noah G. Hoffman

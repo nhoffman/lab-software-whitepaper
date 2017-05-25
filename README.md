@@ -17,6 +17,19 @@ Citations are stored in bibtex format in ``master.bib``. Here's a site
 that can provide citations in bibtex from a pubmed search:
 http://www.bioinformatics.org/texmed/
 
+## Collaborating on this paper
+
+Ok, in many ways, Google Docs, etc would be simpler, but here are some
+reasons that collaboration on a plain-text markup hosted on GitHub is
+appealing:
+
+- Version control!
+- Can edit offline, each using our favorite editor.
+- Can use issues for discussion and to delegate tasks
+- There are many models for collaboration (eg, users can collaborate by forking followed by a pull request without being added to the project first).
+- Can compile to various media types.
+- Serves as a demonstration of collaboration using open source tools!
+
 ## Dependencies
 
 PDF output requires LaTeX.
@@ -34,11 +47,13 @@ brew install pandoc pandoc-citeproc
 ## Compilation
 
 After cloning this repo, initialize the git submodule containing the
-latex stylesheets:
+latex stylesheets and clone the contents:
 
 ```
-git submodule init
+git submodule init && git submodule update
 ```
+
+After this, make sure that the directory ``svm-r-markdown-templates`` has files in it.
 
 If all dependencies are installed, compile the pdf and html output like this:
 
