@@ -7,9 +7,10 @@ practices for the clinical laboratory community.
 
 This repository contains the manuscript text in Markdown format - or
 more specifically, a Markdown variant RMarkdown, compiled using the
-reproducible research tool ``Knitr``. Further explanation and
-instructions are here:
+reproducible research tool ``Knitr``. Further explanation,
+instructions, and examples are here:
 
+- http://rmarkdown.rstudio.com
 - http://svmiller.com/blog/2016/02/svm-r-markdown-manuscript/
 - https://github.com/svmiller/svm-r-markdown-templates
 
@@ -45,15 +46,6 @@ brew install pandoc pandoc-citeproc
 ```
 
 ## Compilation
-
-After cloning this repo, initialize the git submodule containing the
-latex stylesheets and clone the contents:
-
-```
-git submodule init && git submodule update
-```
-
-After this, make sure that the directory ``svm-r-markdown-templates`` has files in it.
 
 If all dependencies are installed, compile the pdf and html output like this:
 

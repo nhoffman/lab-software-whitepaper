@@ -5,11 +5,11 @@ output:
     keep_tex: true
     fig_caption: true
     latex_engine: pdflatex
-    template: ./svm-r-markdown-templates/svm-latex-ms.tex
+    toc: true
+    number_sections: true
+  html_document:
+    toc: true
 title: "Whitepaper: software development best practices for the clinical laboratory"
-author:
-- name: Noah G. Hoffman
-  affiliation: University of Washington, Department of Laboratory Medicine
 keywords: "clinical laboratory informatics, software development, best practices"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
@@ -19,6 +19,10 @@ fontsize: 11pt
 bibliography: master.bib
 biblio-style: apsr
 ---
+
+# Authors
+
+- Noah G. Hoffman (University of Washington, Department of Laboratory Medicine)
 
 # Abstract
 
@@ -32,11 +36,7 @@ Example of a citation [@butte-2009]
 
 ## Software development lifecycle
 
-### Version control
-
 ### Code review
-
-### Semantic versioning
 
 ### Validation
 
@@ -44,16 +44,50 @@ Example of a citation [@butte-2009]
 
 Mention continuous integration
 
+### Semantic version numbers
+
+http://semver.org
+
+## Version control
+
+### Version control software
+
 ## Testing
 
 ### Unit testing
+
+- test driven development
 
 ### Functional testing
 
 ### Regression testing
 
+## Building and maintaining a software development team
+
+### Hiring
+
+### Code standards and conventions
+
+- https://google.github.io/styleguide/pyguide.html
+- https://www.python.org/dev/peps/pep-0008/
+- Sometimes code formatting standards are baked into the language: https://blog.golang.org/go-fmt-your-code
+
 ## Choosing languages and technology
 
-## Hiring a team
+- emphasize readability
+- availability and quality of documentation
+- activity and friendliness of the community
+- development tools
+- language safety (can pick on R a bit here to provide examples: silent errors indexing a list; silent coercion of data types; unexpected vector return type when slicing of a data.frame)
+- evaluating viability of technology, products
+- institutional and organizational considerations (building on existing knowledge vs choosing the ideal technology for the project)
+- pros and cons of open source
+
+## Application architecture
+
+- when is optimization premature?
+- using components
+- YAGNI
+- DRY vs premature generalization
 
 # References
