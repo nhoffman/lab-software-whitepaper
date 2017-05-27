@@ -28,7 +28,10 @@ biblio-style: apsr
 
 # Introduction
 
-Example of a citation [@butte-2009]
+Relevant literature:
+
+- [@butte-2009]
+- [@Gershkovich2015]
 
 # Objectives
 
