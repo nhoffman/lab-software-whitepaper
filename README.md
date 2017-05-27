@@ -14,10 +14,6 @@ instructions, and examples are here:
 - http://svmiller.com/blog/2016/02/svm-r-markdown-manuscript/
 - https://github.com/svmiller/svm-r-markdown-templates
 
-Citations are stored in bibtex format in ``master.bib``. Here's a site
-that can provide citations in bibtex from a pubmed search:
-http://www.bioinformatics.org/texmed/
-
 ## Collaborating on this paper
 
 Ok, in many ways, Google Docs, etc would be simpler, but here are some
@@ -31,9 +27,13 @@ appealing:
 - Can compile to various media types.
 - Serves as a demonstration of collaboration using open source tools!
 
-If you are proposing significant changes, it's probably best to create a feature branch (and perhaps open a pull request), and then merge with ``--squash``.
+If you are proposing significant changes, it's probably best to create
+a feature branch (and perhaps open a pull request), and then merge
+with ``--squash``.
 
 ## Dependencies
+
+You'll need R.
 
 PDF output requires LaTeX.
 
@@ -58,3 +58,11 @@ make
 Use ``make html`` or ``make pdf`` to compile only one or the other;
 see the Makefile for other options.
 
+## References
+
+Citations are stored in bibtex format in ``master.bib``. There are
+many sites and open source tools for creating and managing references
+in bibtex format:
+
+- get citations in bibtex from a pubmed search: http://www.bioinformatics.org/texmed/
+- http://www.jabref.org (be sure to search Medline; other databases may not return complete records)
