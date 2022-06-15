@@ -31,22 +31,6 @@ If you are proposing significant changes, it's probably best to create
 a feature branch (and perhaps open a pull request), and then merge
 with ``--squash``.
 
-## Dependencies
-
-You'll need R.
-
-PDF output requires LaTeX.
-
-```
-brew cask install mactex
-```
-
-HTML generation requires ``pandoc`` and ``pandoc-citeproc``
-
-```
-brew install pandoc pandoc-citeproc
-```
-
 ## Compilation
 
 If all dependencies are installed, compile the pdf and html output like this:
@@ -57,6 +41,28 @@ make
 
 Use ``make html`` or ``make pdf`` to compile only one or the other;
 see the Makefile for other options.
+
+## Dependencies
+
+You'll need R version 4.x with ``rmarkdown`` installed.
+
+PDF output requires LaTeX.
+
+```
+brew cask install mactex
+```
+
+HTML generation requires ``pandoc`` and ``pandoc-crossref``
+
+```
+brew install pandoc pandoc-crossref
+```
+
+Even easier is to use Docker:
+
+```
+docker run --rm -v $PWD:/report -w /report rocker/verse:latest make html
+```
 
 ## References
 
